@@ -1,11 +1,12 @@
+# imports all modules 
 import overheads as ohs
 import cash_on_hand as coh
 import profit_loss as pfl
-
+# sets following variables for returned values
 ohs_percent, ohs_cat = ohs.overhead_max_percentage()
 deft = coh.cash_surplus_deficit()
 np = pfl.extract_profit_loss()
-
+# write text in summary report file using a for loop iterating each nested list
 with open("summary_report.txt", "a") as file:
     file.write(f"[HIGHEST OVERHEADS] {ohs_cat.title()}: {ohs_percent:.2f}% \n")
     
