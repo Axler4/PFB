@@ -17,7 +17,7 @@ def extract_profit_loss():
     days = range(90,0,-1)
     
     
-    fp = Path.cwd()/ r"C:\Users\amias\IGP programming\csv_files\Profit & Loss.csv"
+    fp = Path.cwd()/ r"C:\Users\amias\IGP programming\csv_files\Overheads.csv"
     # setup csv reading function
     with open(fp, 'r') as file:
         reader = csv.reader(file)
